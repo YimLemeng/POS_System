@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.POS_504.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Oracle.ManagedDataAccess.Client" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRODUCT_VTableAdapter" GeneratorDataComponentClassName="PRODUCT_VTableAdapter" Name="PRODUCT_V" UserDataComponentName="PRODUCT_VTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="BBU504.PRODUCT_V" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, PRODUCTCODE, BARCODE, PRODUCTNAME, PRODUCTNAMEKH, CATEGORYID, SUPPLIERID, STOCKTYPE, QTYONHAND, QTYALERT, PICTURE, ACTIVE, CATNAME, SUPPLIERNAME FROM BBU504.PRODUCT_V</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="PRODUCTCODE" DataSetColumn="PRODUCTCODE" />
+              <Mapping SourceColumn="BARCODE" DataSetColumn="BARCODE" />
+              <Mapping SourceColumn="PRODUCTNAME" DataSetColumn="PRODUCTNAME" />
+              <Mapping SourceColumn="PRODUCTNAMEKH" DataSetColumn="PRODUCTNAMEKH" />
+              <Mapping SourceColumn="CATEGORYID" DataSetColumn="CATEGORYID" />
+              <Mapping SourceColumn="SUPPLIERID" DataSetColumn="SUPPLIERID" />
+              <Mapping SourceColumn="STOCKTYPE" DataSetColumn="STOCKTYPE" />
+              <Mapping SourceColumn="QTYONHAND" DataSetColumn="QTYONHAND" />
+              <Mapping SourceColumn="QTYALERT" DataSetColumn="QTYALERT" />
+              <Mapping SourceColumn="PICTURE" DataSetColumn="PICTURE" />
+              <Mapping SourceColumn="ACTIVE" DataSetColumn="ACTIVE" />
+              <Mapping SourceColumn="CATNAME" DataSetColumn="CATNAME" />
+              <Mapping SourceColumn="SUPPLIERNAME" DataSetColumn="SUPPLIERNAME" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PRODUCT_V" msprop:Generator_RowEvHandlerName="PRODUCT_VRowChangeEventHandler" msprop:Generator_RowDeletedName="PRODUCT_VRowDeleted" msprop:Generator_RowDeletingName="PRODUCT_VRowDeleting" msprop:Generator_RowEvArgName="PRODUCT_VRowChangeEvent" msprop:Generator_TablePropName="PRODUCT_V" msprop:Generator_RowChangedName="PRODUCT_VRowChanged" msprop:Generator_RowChangingName="PRODUCT_VRowChanging" msprop:Generator_TableClassName="PRODUCT_VDataTable" msprop:Generator_RowClassName="PRODUCT_VRow" msprop:Generator_TableVarName="tablePRODUCT_V" msprop:Generator_UserTableName="PRODUCT_V">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRODUCTCODE" msprop:Generator_ColumnPropNameInRow="PRODUCTCODE" msprop:Generator_ColumnPropNameInTable="PRODUCTCODEColumn" msprop:Generator_ColumnVarNameInTable="columnPRODUCTCODE" msprop:Generator_UserColumnName="PRODUCTCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BARCODE" msprop:Generator_ColumnPropNameInRow="BARCODE" msprop:Generator_ColumnPropNameInTable="BARCODEColumn" msprop:Generator_ColumnVarNameInTable="columnBARCODE" msprop:Generator_UserColumnName="BARCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCTNAME" msprop:Generator_ColumnPropNameInRow="PRODUCTNAME" msprop:Generator_ColumnPropNameInTable="PRODUCTNAMEColumn" msprop:Generator_ColumnVarNameInTable="columnPRODUCTNAME" msprop:Generator_UserColumnName="PRODUCTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCTNAMEKH" msprop:Generator_ColumnPropNameInRow="PRODUCTNAMEKH" msprop:Generator_ColumnPropNameInTable="PRODUCTNAMEKHColumn" msprop:Generator_ColumnVarNameInTable="columnPRODUCTNAMEKH" msprop:Generator_UserColumnName="PRODUCTNAMEKH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATEGORYID" msprop:Generator_ColumnPropNameInRow="CATEGORYID" msprop:Generator_ColumnPropNameInTable="CATEGORYIDColumn" msprop:Generator_ColumnVarNameInTable="columnCATEGORYID" msprop:Generator_UserColumnName="CATEGORYID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUPPLIERID" msprop:Generator_ColumnPropNameInRow="SUPPLIERID" msprop:Generator_ColumnPropNameInTable="SUPPLIERIDColumn" msprop:Generator_ColumnVarNameInTable="columnSUPPLIERID" msprop:Generator_UserColumnName="SUPPLIERID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STOCKTYPE" msprop:Generator_ColumnPropNameInRow="STOCKTYPE" msprop:Generator_ColumnPropNameInTable="STOCKTYPEColumn" msprop:Generator_ColumnVarNameInTable="columnSTOCKTYPE" msprop:Generator_UserColumnName="STOCKTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QTYONHAND" msprop:Generator_ColumnPropNameInRow="QTYONHAND" msprop:Generator_ColumnPropNameInTable="QTYONHANDColumn" msprop:Generator_ColumnVarNameInTable="columnQTYONHAND" msprop:Generator_UserColumnName="QTYONHAND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTYALERT" msprop:Generator_ColumnPropNameInRow="QTYALERT" msprop:Generator_ColumnPropNameInTable="QTYALERTColumn" msprop:Generator_ColumnVarNameInTable="columnQTYALERT" msprop:Generator_UserColumnName="QTYALERT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PICTURE" msprop:Generator_ColumnPropNameInRow="PICTURE" msprop:Generator_ColumnPropNameInTable="PICTUREColumn" msprop:Generator_ColumnVarNameInTable="columnPICTURE" msprop:Generator_UserColumnName="PICTURE" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ACTIVE" msprop:Generator_ColumnPropNameInRow="ACTIVE" msprop:Generator_ColumnPropNameInTable="ACTIVEColumn" msprop:Generator_ColumnVarNameInTable="columnACTIVE" msprop:Generator_UserColumnName="ACTIVE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CATNAME" msprop:Generator_ColumnPropNameInRow="CATNAME" msprop:Generator_ColumnPropNameInTable="CATNAMEColumn" msprop:Generator_ColumnVarNameInTable="columnCATNAME" msprop:Generator_UserColumnName="CATNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUPPLIERNAME" msprop:Generator_ColumnPropNameInRow="SUPPLIERNAME" msprop:Generator_ColumnPropNameInTable="SUPPLIERNAMEColumn" msprop:Generator_ColumnVarNameInTable="columnSUPPLIERNAME" msprop:Generator_UserColumnName="SUPPLIERNAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

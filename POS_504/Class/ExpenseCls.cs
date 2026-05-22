@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Oracle.ManagedDataAccess.Client;
+
+namespace POS_504.Class
+{
+    internal class ExpenseCls
+    {
+        public string Id { get; set; }
+        public string ExpenseDate { get; set; }
+        public string PaymentMethodId { get; set; }
+        public string ExpenseTypeId { get; set; }
+        public decimal Amount { get; set; }
+        public string UserId { get; set; }
+
+        public bool Insert()
+        {
+            try
+            {
+                if (Program.cn.State != ConnectionState.Open) Program.cn.Open();
+                using (OracleCommand cmd = new OracleCommand("Expense_Insert", Program.cn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("p_date", OracleDbType.Varchar2).Value = ExpenseDate;
+                    cmd.Parameters.Add("p_paymentmethodid", OracleDbType.Int32).Value = Convert.ToInt32(PaymentMethodId);
+                    cmd.Parameters.Add("p_expensetypeid", OracleDbType.Int32).Value = Convert.ToInt32(ExpenseTypeId);
+                    cmd.Parameters.Add("p_amount", OracleDbType.Decimal).Value = Amount;
+                    cmd.Parameters.Add("p_userid", OracleDbType.Int32).Value = Convert.ToInt32(UserId);
+                    OracleParameter outId = new OracleParameter("p_id", OracleDbType.Int32);
+                    outId.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(outId);
+
+                    cmd.ExecuteNonQuery();
+                    this.Id = outId.Value.ToString(); 
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Insert Error: " + ex.Message);
+                return false;
+            }
+        }
+        public bool Update()
+        {
+            try
+            {
+                if (Program.cn.State != ConnectionState.Open) Program.cn.Open();
+                using (OracleCommand cmd = new OracleCommand("Expense_Update", Program.cn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("p_id", OracleDbType.Int32).Value = Convert.ToInt32(Id);
+                    cmd.Parameters.Add("p_date", OracleDbType.Varchar2).Value = ExpenseDate;
+                    cmd.Parameters.Add("p_paymentmethodid", OracleDbType.Int32).Value = Convert.ToInt32(PaymentMethodId);
+                    cmd.Parameters.Add("p_expensetypeid", OracleDbType.Int32).Value = Convert.ToInt32(ExpenseTypeId);
+                    cmd.Parameters.Add("p_amount", OracleDbType.Decimal).Value = Amount;
+                    cmd.Parameters.Add("p_userid", OracleDbType.Int32).Value = Convert.ToInt32(UserId);
+
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update Error: " + ex.Message);
+                return false;
+            }
+        }
+        public bool Delete()
+        {
+            try
+            {
+                if (Program.cn.State != ConnectionState.Open) Program.cn.Open();
+                using (OracleCommand cmd = new OracleCommand("Expense_Delete", Program.cn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("p_id", OracleDbType.Int32).Value = Convert.ToInt32(Id);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Delete Error: " + ex.Message);
+                return false;
+            }
+        }
+        public DataSet SelectAll()
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                if (Program.cn.State != ConnectionState.Open) Program.cn.Open();
+                using (OracleCommand cmd = new OracleCommand("SelectAllExpense", Program.cn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("p_recordset", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+                    using (OracleDataAdapter da = new OracleDataAdapter(cmd))
+                    {
+                        da.Fill(ds);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fetch Error: " + ex.Message);
+            }
+            return ds;
+        }
+    }
+}
