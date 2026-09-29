@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +18,7 @@ namespace POS_504.Setup
         public MidtermFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadCustomerCombo();
             LoadUserCombo();
             LoadRecord();

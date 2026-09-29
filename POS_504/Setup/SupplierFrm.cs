@@ -1,4 +1,4 @@
-﻿using POS_504.Class;
+using POS_504.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +19,7 @@ namespace POS_504.Setup
         public SupplierFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadRecord();
             cboSex.Items.Add("Male");
             cboSex.Items.Add("Female");

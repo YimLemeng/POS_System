@@ -1,4 +1,4 @@
-﻿using POS_504.Class;
+using POS_504.Class;
 using POS_504.Security;
 using System;
 using System.Collections.Generic;
@@ -18,6 +18,7 @@ namespace POS_504
         public LoginFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

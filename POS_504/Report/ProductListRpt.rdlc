@@ -43,7 +43,7 @@
                               <Value>លេខរៀង</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -79,7 +79,7 @@
                               <Value>ឈ្មោះជា​អង់គ្លេស</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -115,7 +115,7 @@
                               <Value>ឈ្មោះជាខ្មែរ</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -151,7 +151,7 @@
                               <Value>ប្រភេទស្តុក</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -187,7 +187,7 @@
                               <Value>ស្តុកក្នុងដៃ</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -223,7 +223,7 @@
                               <Value>ស្តុកជិតអស់</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -259,7 +259,7 @@
                               <Value>ប្រភេទទំនិញ</Value>
                               <Style>
                                 <FontFamily>Khmer OS Battambang</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>12pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -703,7 +703,7 @@
                             <Value>អ្នកផ្គត់ផ្គង់</Value>
                             <Style>
                               <FontFamily>Khmer OS Battambang</FontFamily>
-                              <FontSize>9pt</FontSize>
+                              <FontSize>12pt</FontSize>
                             </Style>
                           </TextRun>
                         </TextRuns>
@@ -894,7 +894,7 @@
                 <Value>ព្រីននៅថ្ងៃទី</Value>
                 <Style>
                   <FontFamily>Battambang</FontFamily>
-                  <FontSize>9pt</FontSize>
+                  <FontSize>12pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -959,7 +959,7 @@
                 <Value>រៀបចំដោយ</Value>
                 <Style>
                   <FontFamily>Battambang</FontFamily>
-                  <FontSize>9pt</FontSize>
+                  <FontSize>12pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>

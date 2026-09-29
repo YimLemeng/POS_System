@@ -152,6 +152,7 @@
     <Compile Include="Class\SupplierCls.cs" />
     <Compile Include="Class\UnitCls.cs" />
     <Compile Include="Class\UserCls.cs" />
+    <Compile Include="Class\UITheme.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

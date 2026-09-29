@@ -1,4 +1,4 @@
-﻿using POS_504.Class;
+using POS_504.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +17,7 @@ namespace POS_504.Setup
         public CategoryFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadRecord();
         }
 

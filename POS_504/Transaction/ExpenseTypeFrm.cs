@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +17,7 @@ namespace POS_504.Setup
         public ExpenseTypeFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadExpenseTypeData();
             ClearInputs();
             txtId.ReadOnly = true;

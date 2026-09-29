@@ -1,5 +1,6 @@
-﻿using Microsoft.Reporting.WinForms;
+using Microsoft.Reporting.WinForms;
 using Oracle.ManagedDataAccess.Client;
+using POS_504.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace POS_504.Report
         public ProductListRpt()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
         }
 
         private void ProductListRpt_Load(object sender, EventArgs e)

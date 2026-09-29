@@ -1,4 +1,4 @@
-﻿using POS_504.Class;
+using POS_504.Class;
 using POS_504.Report;
 using POS_504.Setup;
 using POS_504.Transaction;
@@ -19,6 +19,8 @@ namespace POS_504.Security
         public MainFrm(string username)
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
+            UITheme.SetMdiBackground(this, UITheme.SlateHeader);
             toolUser.Text = username;
         }
 

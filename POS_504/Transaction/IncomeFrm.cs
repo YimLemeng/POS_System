@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +21,7 @@ namespace POS_504.Setup
         public IncomeFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadIncomeData();
             LoadDropdowns();
             ClearInputs();

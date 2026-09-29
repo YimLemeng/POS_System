@@ -1,4 +1,4 @@
-﻿namespace POS_504.Setup
+namespace POS_504.Setup
 {
     partial class ExpenseTypeFrm
     {
@@ -47,60 +47,90 @@
             // 
             this.dgvExpenseType.AllowUserToAddRows = false;
             this.dgvExpenseType.AllowUserToDeleteRows = false;
+            this.dgvExpenseType.BackgroundColor = System.Drawing.Color.White;
+            this.dgvExpenseType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvExpenseType.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvExpenseType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExpenseType.Location = new System.Drawing.Point(61, 458);
+            this.dgvExpenseType.EnableHeadersVisualStyles = false;
+            this.dgvExpenseType.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.dgvExpenseType.Location = new System.Drawing.Point(50, 275);
             this.dgvExpenseType.Name = "dgvExpenseType";
             this.dgvExpenseType.ReadOnly = true;
+            this.dgvExpenseType.RowHeadersVisible = false;
             this.dgvExpenseType.RowHeadersWidth = 82;
-            this.dgvExpenseType.RowTemplate.Height = 33;
-            this.dgvExpenseType.Size = new System.Drawing.Size(789, 379);
+            this.dgvExpenseType.RowTemplate.Height = 36;
+            this.dgvExpenseType.Size = new System.Drawing.Size(780, 320);
             this.dgvExpenseType.TabIndex = 6;
             this.dgvExpenseType.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExpenseType_CellClick);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(449, 360);
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(440, 215);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(139, 63);
+            this.btnUpdate.Size = new System.Drawing.Size(130, 42);
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(614, 360);
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(590, 215);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(139, 63);
+            this.btnDelete.Size = new System.Drawing.Size(130, 42);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(279, 360);
+            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInsert.FlatAppearance.BorderSize = 0;
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnInsert.ForeColor = System.Drawing.Color.White;
+            this.btnInsert.Location = new System.Drawing.Point(290, 215);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(139, 63);
+            this.btnInsert.Size = new System.Drawing.Size(130, 42);
             this.btnInsert.TabIndex = 3;
             this.btnInsert.Text = "Insert";
-            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.UseVisualStyleBackColor = false;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(116, 360);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(165)))), ((int)(((byte)(233)))));
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(140, 215);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(139, 63);
+            this.btnAdd.Size = new System.Drawing.Size(130, 42);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(543, 150);
+            this.label3.Location = new System.Drawing.Point(460, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 25);
             this.label3.TabIndex = 88;
@@ -108,16 +138,16 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(548, 187);
+            this.txtName.Location = new System.Drawing.Point(460, 125);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(302, 47);
+            this.txtName.Size = new System.Drawing.Size(370, 36);
             this.txtName.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 150);
+            this.label1.Location = new System.Drawing.Point(50, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 84;
@@ -125,26 +155,27 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(61, 187);
+            this.txtId.Location = new System.Drawing.Point(50, 125);
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(302, 47);
+            this.txtId.Size = new System.Drawing.Size(370, 36);
             this.txtId.TabIndex = 83;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Impact", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(244, 34);
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.label9.Location = new System.Drawing.Point(230, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(465, 53);
+            this.label9.Size = new System.Drawing.Size(420, 45);
             this.label9.TabIndex = 82;
-            this.label9.Text = "ExpenseType Information";
+            this.label9.Text = "Expense Type Information";
             // 
             // chkActive
             // 
             this.chkActive.AutoSize = true;
-            this.chkActive.Location = new System.Drawing.Point(263, 279);
+            this.chkActive.Location = new System.Drawing.Point(135, 175);
             this.chkActive.Name = "chkActive";
             this.chkActive.Size = new System.Drawing.Size(28, 27);
             this.chkActive.TabIndex = 1;
@@ -154,7 +185,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(56, 279);
+            this.label7.Location = new System.Drawing.Point(50, 173);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 29);
             this.label7.TabIndex = 97;
@@ -164,7 +195,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 929);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(880, 630);
             this.Controls.Add(this.chkActive);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvExpenseType);
@@ -177,10 +209,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label9);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = true;
             this.Name = "ExpenseTypeFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ExpenseTypeFrm";
+            this.Text = "Expense Type Information";
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenseType)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

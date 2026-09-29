@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +19,7 @@ namespace POS_504.Transaction
         public BeginingBalanceFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadGridData();
             LoadDropdowns();
             ClearInputs();

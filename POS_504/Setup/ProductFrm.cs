@@ -1,4 +1,4 @@
-﻿using Oracle.ManagedDataAccess.Client;
+using Oracle.ManagedDataAccess.Client;
 using POS_504.Class;
 using System;
 using System.Collections.Generic;
@@ -19,6 +19,7 @@ namespace POS_504.Setup
         public ProductFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             BindSelectSupplier();
             BindSelectCategory();
             dgvProduct.AutoGenerateColumns = true;

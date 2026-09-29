@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +24,7 @@ namespace POS_504.Setup
         public PurchaseFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             LoadPurchaseHistory();
             BindPaymentMethodComboBox();
             LoadRecord();

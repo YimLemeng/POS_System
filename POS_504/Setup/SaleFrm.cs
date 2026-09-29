@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +22,7 @@ namespace POS_504.Setup
         public SaleFrm()
         {
             InitializeComponent();
+            UITheme.ApplyModernTheme(this);
             SetupDataGridView();
             LoadDropdowns();
             PrepareNewSale();
