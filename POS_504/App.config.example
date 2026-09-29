@@ -1,13 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <configSections>
     <section name="oracle.manageddataaccess.client" type="OracleInternal.Common.ODPMSectionHandler, Oracle.ManagedDataAccess, Version=4.122.23.1, Culture=neutral, PublicKeyToken=89b483f429c47342" />
   </configSections>
   <connectionStrings>
-    <connectionStrings>
-    <add name="POS_504.Properties.Settings.ConnectionString" connectionString="USER ID=YOUR_ID;PASSWORD=YOUR_PASSWORD_HERE;" />
-    <add name="POS_504.Properties.Settings.ConnectionString1" connectionString="USER ID=YOUR_ID;PASSWORD=YOUR_PASSWORD_HERE;" />
-</connectionStrings>
+    <add name="POS_504.Properties.Settings.ConnectionString"
+      connectionString="USER ID=YOUR_USER;PASSWORD=YOUR_PASSWORD;DATA SOURCE=YOUR_HOST:1521/YOUR_SERVICE;PERSIST SECURITY INFO=True"
+      providerName="Oracle.ManagedDataAccess.Client" />
+    <add name="POS_504.Properties.Settings.ConnectionString1"
+      connectionString="USER ID=YOUR_USER;PASSWORD=YOUR_PASSWORD;DATA SOURCE=YOUR_HOST:1521/YOUR_SERVICE;PERSIST SECURITY INFO=True"
+      providerName="Oracle.ManagedDataAccess.Client" />
   </connectionStrings>
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
